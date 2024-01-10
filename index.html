@@ -63,11 +63,11 @@
                     </div>
                     <div class="form-group mb-3">
                         <label for="Jumlah" class="form-label"><b>Berat Badan (KG)</b></label>
-                        <input type="number" id="name" name="BERAT BADAN (KG)" class="form-control" autocomplete="off" placeholder="Masukkan Berat Badan" required>
+                        <input type="number" id="name" name="BERAT BADAN (KG)" class="form-control" autocomplete="off" placeholder="Masukkan Berat Badan" oninput="validateDecimalInput(this)" required>
                     </div>
                     <div class="form-group mb-3">
                       <label for="Jumlah" class="form-label"><b>Tinggi Badan (CM)</b></label>
-                      <input type="number" id="name" name="TINGGI BADAN (CM)" class="form-control" autocomplete="off" placeholder="Masukkan Tinggi Badan" required>
+                      <input type="number" id="name" name="TINGGI BADAN (CM)" class="form-control" autocomplete="off" placeholder="Masukkan Tinggi Badan" oninput="validateDecimalInput(this)" required>
                   </div>
                   <div class="form-group mb-3">
                     <label for="nama" class="form-label"><b>Tanggal Lahir</b></label>
@@ -123,7 +123,7 @@
                     </select>
                     <div class="form-group mb-3">
                       <label for="Jumlah" class="form-label"><b>Rata-rata Rapor</b></label>
-                      <input type="number" id="name" name="RATA-RATA RAPOR" class="form-control" autocomplete="off" placeholder="Masukkan rata-rata semester 1-5" required>
+                      <input type="number" id="name" name="RATA-RATA RAPOR" class="form-control" autocomplete="off" placeholder="Masukkan rata-rata semester 1-5" oninput="validateDecimalInput(this)" required>
                   </div>
                   <div class="form-group mb-3">
                     <label for="Jumlah" class="form-label"><b>Jarak Rumah Ke Sekolah (KM)</b></label>
