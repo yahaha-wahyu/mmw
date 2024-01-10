@@ -127,7 +127,21 @@
                   </div>
                   <div class="form-group mb-3">
                     <label for="Jumlah" class="form-label"><b>Jarak Rumah Ke Sekolah (KM)</b></label>
-                    <input type="text" id="name" name="JARAK RUMAH KE SEKOLAH (KM)" class="form-control" autocomplete="off" placeholder="(cth jarak koma: 1.5)" required>
+                    <input type="text" id="name" name="JARAK RUMAH KE SEKOLAH (KM)" class="form-control" autocomplete="off" placeholder="(cth jarak koma: 1.5)" oninput="validateDecimalInput(this)" required>
+
+<script>
+function validateDecimalInput(input) {
+    // Hanya izinkan digit, titik, dan koma
+    input.value = input.value.replace(/[^\d.,]/g, '');
+
+    // Validasi khusus (contoh: tidak boleh lebih dari satu titik atau koma)
+    if (input.value.split('.').length > 2 || input.value.split(',').length > 2) {
+        // Jika lebih dari satu titik atau koma, hapus karakter terakhir
+        input.value = input.value.slice(0, -1);
+    }
+}
+</script>
+
                 </div>
                     <ul class="list"></ul>
                     <div>
